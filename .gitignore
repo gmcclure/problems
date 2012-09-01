@@ -1,3 +1,6 @@
+# Compiled binaries
+main
+
 # Compiled Object files
 *.slo
 *.lo
@@ -5,6 +8,7 @@
 
 # Compiled Dynamic libraries
 *.so
+*.dSYM
 
 # Compiled Static libraries
 *.lai
