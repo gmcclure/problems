@@ -29,10 +29,8 @@ int main(int argc, const char *argv[])
 
         /* initialize grid */
         grid = malloc(sizeof(int **)*lines);
-        for(i=0; i<lines; i++) {
-            grid[i] = malloc(sizeof(int *)*cols);
-            for(j=0; j<cols; j++) grid[i][j]=0;
-        }
+        for(i=0; i<lines; i++)
+            grid[i] = calloc(cols, sizeof(int *));
 
         /* grab lines and tally grid */
         for(i=0; i<lines; i++) {
