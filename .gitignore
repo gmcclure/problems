@@ -14,3 +14,6 @@ main
 *.lai
 *.la
 *.a
+
+# IDE files
+.idea/
