@@ -17,3 +17,6 @@ main
 
 # IDE files
 .idea/
+
+# Python binaries
+*.pyc
