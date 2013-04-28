@@ -1,5 +1,18 @@
 # Algorithm Problems #
 
+## CoderSumo ##
+
+[Codersumo.com](http://codersumo.com)
+
+* Numbers to words
+
+## Programming Praxis ##
+
+[ProgrammingPraxis.com](http://programmingpraxis.com)
+
+* RPN Calculator
+* Sieve of Eratosthenes
+
 ## UVa ##
 
 [UVa Online Judge](http://uva.onlinejudge.org)
