@@ -21,6 +21,7 @@ class LCDNum
   end
 
   def to_s
+    ret = ""
     5.times do |idx|
       str = ""
       ch = idx%2 == 0 ? '-' : '|'
@@ -39,12 +40,13 @@ class LCDNum
       end
       if ch == '|'
         @sz.times do
-          puts str
+          ret += str + "\n"
         end
       else
-        puts str
+        ret += str + "\n"
       end
     end
+    ret
   end
 end
 
