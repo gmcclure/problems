@@ -38,13 +38,7 @@ class LCDNum
 
         str += " "
       end
-      if ch == '|'
-        @sz.times do
-          ret += str + "\n"
-        end
-      else
-        ret += str + "\n"
-      end
+      ret += ch == '|' ? (str + "\n") * @sz : str + "\n"
     end
     ret
   end
