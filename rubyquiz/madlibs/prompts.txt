@@ -1,0 +1,3 @@
+Our favorite language is ((gem:a gemstone)). We think ((gem)) is better than ((a gemstone)).
+I had a ((an adjective)) sandwich for lunch today. It dripped all over my ((a body part)) and ((a noun)).
+You might think I'm ((mood:an adjective)). But I'm not ((mood)), nor am I ((mood2:another adjective)). Nope, I'm neither ((mood)) nor ((mood2)). I'm ((mood3:a noun)).
