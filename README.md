@@ -13,6 +13,11 @@
 * RPN Calculator
 * Sieve of Eratosthenes
 
+## Ruby Quiz ##
+
+* Mad Libs
+* LCD Numbers
+
 ## SPOJ ##
 
 [Sphere Online Judge](http://www.spoj.pl)
