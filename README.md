@@ -30,4 +30,4 @@
 
 * 10137 - The Trip
 * 10189 - Minesweeper
-
+* 706 - LCD Display
