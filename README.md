@@ -1,12 +1,5 @@
 # Algorithm Problems #
 
-## CoderSumo ##
-
-[Codersumo.com](http://codersumo.com)
-
-* Numbers to words
-* Jolly Jumpers
-
 ## Programming Praxis ##
 
 [ProgrammingPraxis.com](http://programmingpraxis.com)
