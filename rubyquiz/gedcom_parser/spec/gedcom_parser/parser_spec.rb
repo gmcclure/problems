@@ -41,7 +41,7 @@ module GEDCOMParser
 
     describe "#parse" do
       it "outputs a minimally correct file when given a small sample input file" do
-        @parser.parse('data/royal.ged')
+        @parser.parse('spec/data/good-ged-file.ged')
       end
     end
   end
