@@ -9,24 +9,24 @@ module GEDCOMParser
     end
 
     describe '#open_ged_file' do
-      it "should give an error when run without a filename" do
+      it "should whine when run without a filename" do
         @output.should_receive(:puts).with("Can't parse without a GEDCOM file name")
         lambda { @parser.open_ged_file('') }.should raise_error SystemExit
       end
 
-      it "complains if the filename doesn't exist" do
+      it "complains and stops if the filename doesn't exist" do
         @output.should_receive(:puts).with("File doesn't exist")
         lambda { @parser.open_ged_file('nonexistent-file') }.should raise_error SystemExit
       end
 
-      it "complains if the supplied file is empty" do
+      it "complains and stops if the supplied file is empty" do
         @output.should_receive(:puts).with("File is empty")
         lambda { @parser.open_ged_file('spec/data/empty-file.ged') }.should raise_error SystemExit
       end
     end
 
     describe "#verify_ged_file" do
-      it "complains if each line in the file doesn't begin with a number, some space, and an identifier" do
+      it "complains and stops if each line in the file doesn't begin with a number, whitespace, and an identifier" do
         fh = @parser.open_ged_file('spec/data/malformed-ged-file.ged')
         @output.should_receive(:puts).with("File isn't properly formatted: error on line 7")
         lambda { @parser.verify_ged_file(fh) }.should raise_error SystemExit
@@ -41,7 +41,7 @@ module GEDCOMParser
 
     describe "#parse" do
       it "outputs a minimally correct file when given a small sample input file" do
-        @parser.parse('spec/data/sample-1.ged')
+        @parser.parse('data/royal.ged')
       end
     end
   end
