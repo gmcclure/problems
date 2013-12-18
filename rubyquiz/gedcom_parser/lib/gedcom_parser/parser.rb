@@ -71,6 +71,10 @@ class Parser
         outfile << "</#{parse_stack.pop[1]}>"
       elsif parse_stack.last and md[:level].to_i < parse_stack.last[0]
         outfile << "</#{parse_stack.pop[1]}>"
+        while md[:level].to_i < parse_stack.last[0]
+          outfile << "\n" << "  " * (md[:level].to_i + 1)
+          outfile << "</#{parse_stack.pop[1]}>"
+        end
         outfile << "\n" << "  " * (md[:level].to_i + 1)
         outfile << "</#{parse_stack.pop[1]}>"
       end
