@@ -1,7 +1,8 @@
-# bubble sort
+# sorts.rb
 
-module BubbleSort
-  def self.sort(c)
+module Sorts
+
+  def self.bubble_sort(c)
     0.upto(c.size-1) do |i|
       (c.size-1).downto(i+1) do |j|
         p = block_given? ? yield(c[j], c[j-1]) : c[j] <=> c[j-1]
@@ -10,4 +11,5 @@ module BubbleSort
     end
     c
   end
+
 end
