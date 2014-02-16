@@ -19,4 +19,16 @@ module Sorts
     c
   end
 
+  def self.insertion_sort(c)
+    1.upto(c.size-1) do |i|
+      j = i
+      while j > 0
+        p = block_given? ? yield(c[j-1], c[j]) : c[j-1] <=> c[j]
+        c[j-1], c[j] = c[j], c[j-1] if p == 1
+        j -= 1
+      end
+    end
+    c
+  end
+
 end
