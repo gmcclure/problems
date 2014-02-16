@@ -12,4 +12,8 @@ class Person
     @last_name  = Faker::Name.last_name
     @age        = rand(18..99)
   end
+
+  def inspect
+    "#{@first_name} #{@last_name} (#{@age})"
+  end
 end
