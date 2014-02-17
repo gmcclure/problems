@@ -31,4 +31,24 @@ module Sorts
     c
   end
 
+  def self.merge_sort(c)
+    return c if c.size <= 1
+    m = c.size/2
+    l = c[0, m]
+    r = c[m, c.size-m]
+    merge(merge_sort(l), merge_sort(r))
+  end
+
+  def self.merge(l, r)
+    s = []
+    until l.empty? or r.empty?
+      if l.first <= r.first
+        s << l.shift
+      else
+        s << r.shift
+      end
+    end
+    s + l + r
+  end
+
 end
