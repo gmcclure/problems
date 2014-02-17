@@ -1,0 +1,3 @@
+I really don't like all the string conversion -- there has to be a better way to
+do this. It seems like adding features to this would be clunky, too. This is a
+candidate for optimization.
